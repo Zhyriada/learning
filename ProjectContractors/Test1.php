@@ -10,17 +10,13 @@
 <body>
 
 <table>
-    <tr><th>Текст заголовка</th></tr>
+    <tr><th>Contractors</th></tr>
     <tr><td>
             <?php
             include ('Contractors.php');
             ?>
     </td></tr>
 </table>
-
-//<?php
-//include ('Contractors.php');
-//?>
 
 </body>
 </html>

@@ -63,5 +63,25 @@ $contractors =
     <?php } ?>
 </ul>
 
+    <table>
+        <tr>
+            <th>CompanyName</th>
+            <th>CEO</th>
+            <th>Contact</th>
+            <th>Activity</th>
+            <th>Region</th>
+        </tr>
+        foreach()
+        { //???
+        <tr>
+            <td>echo $contractor[CompanyName]</td>
+            <td>echo $contractor[CEO]</td>
+            <td>echo $contractor[Contact]</td>
+            <td>echo $contractor[Activity]</td>
+            <td>echo $contractor[Region]</td>
+        </tr>
+        }
+    </table>
+
 </body>
 </html>

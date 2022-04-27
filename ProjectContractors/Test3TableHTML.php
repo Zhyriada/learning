@@ -55,13 +55,39 @@ $contractors =
         'Region' => 'all of Ukraine'
     ],
 ];
+//$contractors = array_chunk($contractors, 5);
 ?>
-<h1>Contractors</h1>
-<ul>
-    <?php foreach ($contractors as $contractor) { ?>
-        <li><?php print_r($contractor) ?></li>
-    <?php } ?>
-</ul>
+
+<table class = "Contractors">
+    <th>CompanyName</th>
+    <th>CEO</th>
+    <th>Contact</th>
+    <th>Activity</th>
+    <th>Region</th>
+<?php foreach ($contractors as $contractor): ?>
+<tr>
+    <?php foreach ($contractor as $a): ?>
+    <td> <?php echo $a; ?> </td>
+    <?php endforeach; ?>
+</tr>
+<?php endforeach; ?>
+</table>
+
+<style>
+    .Contractors {
+        width: 50%;
+    }
+    .Contractors th {
+        width: 10%;
+        border: 1px solid #ddd;
+        padding: 7px 7px;
+    }
+    .Contractors td {
+        width: 10%;
+        border: 1px solid #ddd;
+        padding: 7px 7px;
+    }
+</style>
 
 </body>
 </html>
