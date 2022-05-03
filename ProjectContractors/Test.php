@@ -56,6 +56,7 @@ $contractors =
     ],
 ];
 ?>
+
 <h1>Contractors</h1>
 <ul>
     <?php foreach ($contractors as $contractor) { ?>

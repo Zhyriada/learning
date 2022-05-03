@@ -10,6 +10,7 @@
 <body>
 
 <?php
+include "Contractors.php";
 $contractors =
     [
         [
@@ -58,37 +59,22 @@ $contractors =
 ?>
 
 <table class = "Contractors">
-    <th>CompanyName</th>
-    <th>CEO</th>
-    <th>Contact</th>
-    <th>Activity</th>
-    <th>Region</th>
-<?php foreach ($contractors as $a): ?>
+    <?php foreach ($contractors as $a):
+    ?>
     <tr>
+        <th>CompanyName</th>
         <td> <?php echo $a['CompanyName']; ?> </td>
+        <th>CEO</th>
         <td> <?php echo $a['CEO']; ?> </td>
+        <th>Contact</th>
         <td> <?php echo $a['Contact']; ?> </td>
+        <th>Activity</th>
         <td> <?php echo $a['Activity']; ?> </td>
+        <th>Region</th>
         <td> <?php echo $a['Region']; ?> </td>
-       <?php endforeach; ?>
+        <?php endforeach; ?>
     </tr>
 </table>
-
-<style>
-    .Contractors {
-        width: 50%;
-    }
-    .Contractors th {
-        width: 10%;
-        border: 1px solid #ddd;
-        padding: 7px 7px;
-    }
-    .Contractors td {
-        width: 10%;
-        border: 1px solid #ddd;
-        padding: 7px 7px;
-    }
-</style>
 
 </body>
 </html>

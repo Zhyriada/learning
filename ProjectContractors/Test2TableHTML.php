@@ -10,6 +10,8 @@
 <body>
 
 <?php
+include "Contractors.php";
+
 $contractors =
 [
     [
@@ -58,30 +60,27 @@ $contractors =
 ?>
 <h1>Contractors</h1>
 <ul>
-    <?php foreach ($contractors as $contractor) { ?>
-        <li><?php print_r($contractor) ?></li>
-    <?php } ?>
-</ul>
+    <?php
 
-    <table>
-        <tr>
-            <th>CompanyName</th>
-            <th>CEO</th>
-            <th>Contact</th>
-            <th>Activity</th>
-            <th>Region</th>
-        </tr>
-        foreach()
-        { //???
-        <tr>
-            <td>echo $contractor[CompanyName]</td>
-            <td>echo $contractor[CEO]</td>
-            <td>echo $contractor[Contact]</td>
-            <td>echo $contractor[Activity]</td>
-            <td>echo $contractor[Region]</td>
-        </tr>
-        }
-    </table>
+// ?????
+
+    $arr = [];
+    foreach ($contractors as $contractor) { ?>
+
+            <?php
+            $arr[] = new Contractors
+            (
+                $contractor['CompanyName'],
+                $contractor['CEO'],
+                $contractor['Contact'],
+                $contractor['Activity'],
+                $contractor['Region']
+            );
+            ?>
+
+    <?php } ?>
+
+</ul>
 
 </body>
 </html>
